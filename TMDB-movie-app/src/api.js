@@ -1,4 +1,4 @@
-const TMDB_API_KEY = "65a747d2b7573562c3ac9ee56b0e8118";
+const TMDB_API_KEY = import.meta.env.TMDB_API_KEY;
 
 export async function fetchMovieByTitle(title, apiKey = TMDB_API_KEY) {
   const results = await searchMoviesByTitle(title, apiKey);
